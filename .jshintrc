@@ -4,12 +4,12 @@
   "forin": true,
   "freeze": true,
   "globalstrict": true,
-  "latedef": true,
   "laxbreak": true,
   "maxdepth": 3,
   "nonbsp": true,
   "nonew": false,
   "strict": true,
   "undef": true,
-  "unused": true
+  "unused": true,
+  "node": true
 }
