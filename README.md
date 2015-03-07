@@ -11,7 +11,7 @@ npm install
 ## Run extraction
 
 ```
-node server.js
+node scraper.js
 ```
 
 The results files will be stored in the `dist` folder.
