@@ -1,0 +1,16 @@
+{
+  "name": "bologna-scrap",
+  "version": "1.0.0",
+  "description": "A scraper for bologna children's book fair",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meriadec/bologna-scrap.git"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "nightmare": "latest"
+  },
+  "author": "meriadec <meriadec.pillet@gmail.com>",
+  "license": "BSD",
+  "homepage": "https://github.com/meriadec/bologna-scrap"
+}
