@@ -41,7 +41,7 @@ function scrapLinks (done) {
         var href = link.attr('href');
         var content = link.html();
         if (href.indexOf('idanagrafica') !== -1) {
-          current.name = content.trim().replace(/\n/g, ' ');
+          current.name = content.trim().replace(/\n/g, ' ').replace(/"/g, '');
           current.href = href;
         } else if (href.indexOf('nazione_url') !== -1) {
           current.country = content;
