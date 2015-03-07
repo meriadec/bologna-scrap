@@ -96,8 +96,8 @@ function finish (err, results) {
   rimraf('dist', function () {
     fs.mkdirSync('dist');
     fs.writeFileSync('dist/full.json', JSON.stringify(results, null, '  '));
-    fs.writeFileSync('dist/full.csv', results.map(function (l) {
-      return '"' + l.name + '";"' + l.country + '";"' + l.mail + '"';
+    fs.writeFileSync('dist/full.csv', '"name","country","mail"\n' + results.map(function (l) {
+      return '"' + l.name + '","' + l.country + '","' + l.mail + '"';
     }).join('\n'));
     fs.writeFileSync('dist/mails.txt', results.map(function (r) { return r.mail; }).join('\n'));
     console.log('> done.');
