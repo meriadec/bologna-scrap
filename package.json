@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "async": "^0.9.0",
-    "nightmare": "latest"
+    "nightmare": "latest",
+    "rimraf": "^2.3.1"
   },
   "author": "meriadec <meriadec.pillet@gmail.com>",
   "license": "BSD",
