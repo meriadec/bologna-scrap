@@ -99,7 +99,9 @@ function finish (err, results) {
     fs.writeFileSync('dist/full.csv', '"name","country","mail"\n' + results.map(function (l) {
       return '"' + l.name + '","' + l.country + '","' + l.mail + '"';
     }).join('\n'));
-    fs.writeFileSync('dist/mails.txt', results.map(function (r) { return r.mail; }).join('\n'));
+    fs.writeFileSync('dist/mails.txt', results.filter(function (e) {
+      return !!e.mail;
+    }).map(function (r) { return r.mail; }).join('\n'));
     console.log('> done.');
   });
 }
