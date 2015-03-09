@@ -33,6 +33,8 @@ function scrapLinks (done) {
       'Accept-Language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4'
     })
     .goto(baseUrl + '/nqcontent.cfm?a_id=911')
+    .click('#lang > a:nth-child(2)')
+    .wait(1000)
     .click('input[name=btnAll]')
     .wait(1000)
     .evaluate(function () {
